@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="dPMNf7eo_sCIVaCrriv4">
+    <mxGraphModel dx="1946" dy="1697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Система Allianz Insurance" vertex="1">
+          <mxGeometry height="620" width="950" x="420" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Клієнт" vertex="1">
+          <mxGeometry height="80" width="40" x="220" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Консультант" vertex="1">
+          <mxGeometry height="80" width="40" x="1460" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="База ризиків країн" vertex="1">
+          <mxGeometry height="80" width="40" x="1460" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Пошук необхідної&#xa;страхівки" vertex="1">
+          <mxGeometry height="70" width="220" x="560" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ввести параметри&#xa;подорожі" vertex="1">
+          <mxGeometry height="70" width="220" x="500" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ввести дані про&#xa;стан здоров’я" vertex="1">
+          <mxGeometry height="70" width="220" x="790" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Перевірити рівень ризику&#xa;країни подорожі" vertex="1">
+          <mxGeometry height="70" width="260" x="660" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Фільтрувати страхові&#xa;продукти" vertex="1">
+          <mxGeometry height="70" width="220" x="520" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Переглянути та&#xa;порівняти варіанти" vertex="1">
+          <mxGeometry height="70" width="230" x="810" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Отримати рекомендацію&#xa;консультанта" vertex="1">
+          <mxGeometry height="70" width="230" x="1070" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Вибрати оптимальну&#xa;страхівку" vertex="1">
+          <mxGeometry height="70" width="230" x="900" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-14" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-3" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-15" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-3" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-16" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-3" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-17" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-3" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-18" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-3" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-19" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-4" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-20" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-5" style="endArrow=none;html=1;" target="9WD7ndRigo7hSFPKp6Cs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-21" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-6" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-7" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-22" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-6" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-8" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-23" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-6" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-9" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-24" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-6" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-10" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-25" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-6" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-11" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-26" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-11" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-13" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9WD7ndRigo7hSFPKp6Cs-27" edge="1" parent="1" source="9WD7ndRigo7hSFPKp6Cs-12" style="dashed=1;endArrow=open;html=1;" target="9WD7ndRigo7hSFPKp6Cs-11" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
