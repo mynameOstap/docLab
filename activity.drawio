@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="jicdohpQ0vEdJYZAsiyp">
+    <mxGraphModel dx="2270" dy="1980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="655" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Відкрити сторінку пошуку страхування" vertex="1">
+          <mxGeometry height="50" width="260" x="540" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Ввести дані клієнта та подорожі&#xa;(країна, дати, вік, стан здоров’я)" vertex="1">
+          <mxGeometry height="70" width="340" x="500" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;" value="Дані коректні?" vertex="1">
+          <mxGeometry height="90" width="210" x="565" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Показати повідомлення про помилку" vertex="1">
+          <mxGeometry height="50" width="220" x="170" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Виконати пошук відповідних страхових продуктів" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;" value="Продукти знайдено?" vertex="1">
+          <mxGeometry height="90" width="210" x="565" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Показати повідомлення: відповідних продуктів немає" vertex="1">
+          <mxGeometry height="50" width="250" x="155" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Відобразити список страхових продуктів" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;" value="Потрібен консультант?" vertex="1">
+          <mxGeometry height="90" width="210" x="565" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Надіслати запит консультанту" vertex="1">
+          <mxGeometry height="50" width="240" x="930" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Консультант аналізує дані клієнта&#xa;та рекомендує продукт" vertex="1">
+          <mxGeometry height="70" width="290" x="905" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Клієнт обирає страховий продукт" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Розрахувати кінцеву вартість" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;" value="Підтвердити покупку?" vertex="1">
+          <mxGeometry height="90" width="210" x="565" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Обрати спосіб оплати" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Виконати оплату" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=13;" value="Оплата успішна?" vertex="1">
+          <mxGeometry height="90" width="210" x="565" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="a13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Показати повідомлення про помилку оплати" vertex="1">
+          <mxGeometry height="50" width="220" x="930" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;align=center;verticalAlign=middle;fontSize=13;" value="Сформувати поліс і підтвердження" vertex="1">
+          <mxGeometry height="50" width="340" x="500" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="650" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="endArrow=block;html=1;rounded=0;" target="a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a1" style="endArrow=block;html=1;rounded=0;" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a2" style="endArrow=block;html=1;rounded=0;" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d1" style="endArrow=block;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="a3" value="Ні">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="375" />
+              <mxPoint x="470" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="a3" style="endArrow=block;html=1;rounded=0;" target="a2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="d1" style="endArrow=block;html=1;rounded=0;" target="a4" value="Так">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="a4" style="endArrow=block;html=1;rounded=0;" target="d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="d2" style="endArrow=block;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="a5" value="Ні">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="595" />
+              <mxPoint x="470" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a5" style="endArrow=block;html=1;rounded=0;" target="a2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="285" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="d2" style="endArrow=block;html=1;rounded=0;" target="a6" value="Так">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="a6" style="endArrow=block;html=1;rounded=0;" target="d3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="d3" style="endArrow=block;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="a7" value="Так">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="a7" style="endArrow=block;html=1;rounded=0;" target="a8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="a8" style="endArrow=block;html=1;rounded=0;" target="a9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="925" />
+              <mxPoint x="1050" y="925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="d3" style="endArrow=block;html=1;rounded=0;" target="a9" value="Ні">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="a9" style="endArrow=block;html=1;rounded=0;" target="a10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="a10" style="endArrow=block;html=1;rounded=0;" target="d4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="d4" style="endArrow=block;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="a6" value="Ні">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="1105" />
+              <mxPoint x="460" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="d4" style="endArrow=block;html=1;rounded=0;" target="a11" value="Так">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="a11" style="endArrow=block;html=1;rounded=0;" target="a12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="a12" style="endArrow=block;html=1;rounded=0;" target="d5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="d5" style="endArrow=block;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="a13" value="Ні">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="1395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="a13" style="endArrow=block;html=1;rounded=0;" target="a11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="d5" style="endArrow=block;html=1;rounded=0;" target="a14" value="Так">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="a14" style="endArrow=block;html=1;rounded=0;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
