@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Форма заявки{% endblock %}
+{% block content %}
+<h1>{{ 'Редагувати заявку' if quote else 'Створити заявку' }}</h1>
+<form method="post" class="form-card">
+    <label>Клієнт
+        <select name="customer_id" required>
+            {% for customer in customers %}
+            <option value="{{ customer.id }}" {% if quote and quote.customer_id == customer.id %}selected{% endif %}>{{ customer.full_name }} ({{ customer.age }} р.)</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Страховий продукт
+        <select name="insurance_product_id" required>
+            {% for product in products %}
+            <option value="{{ product.id }}" {% if quote and quote.insurance_product_id == product.id %}selected{% endif %}>{{ product.name }} - €{{ '%.2f'|format(product.daily_price) }}/день</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Консультант
+        <select name="consultant_id">
+            <option value="">Без консультанта</option>
+            {% for consultant in consultants %}
+            <option value="{{ consultant.id }}" {% if quote and quote.consultant_id == consultant.id %}selected{% endif %}>{{ consultant.full_name }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Країна подорожі<input type="text" name="destination_country" value="{{ quote.destination_country if quote else '' }}" required></label>
+    <label>Тривалість подорожі (дні)<input type="number" name="trip_days" value="{{ quote.trip_days if quote else 7 }}" required></label>
+    <label>Статус оплати
+        <select name="payment_status">
+            {% for status in ['Pending', 'Paid', 'Cancelled'] %}
+            <option value="{{ status }}" {% if quote and quote.payment_status == status %}selected{% endif %}>{{ status }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Примітки<textarea name="notes">{{ quote.notes if quote else '' }}</textarea></label>
+    <p class="note">Під час збереження система автоматично перерахує суму на основі віку клієнта, стану здоров'я, країни та тривалості подорожі.</p>
+    <div class="actions-row">
+        <button class="btn" type="submit">Зберегти</button>
+        <a class="btn secondary" href="{{ url_for('quotes.list_quotes') }}">Назад</a>
+    </div>
+</form>
+{% endblock %}

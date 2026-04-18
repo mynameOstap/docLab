@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Головна{% endblock %}
+{% block content %}
+<section class="hero">
+    <div>
+        <h1>Система пошуку страхових продуктів для подорожі у відпустку</h1>
+        <p>Веб-додаток за шаблоном MVC для пошуку, вибору, консультування та розрахунку оплати туристичного страхування Allianz.</p>
+    </div>
+</section>
+
+<section class="stats-grid">
+    <div class="card"><h3>{{ stats.products }}</h3><p>Страхових продуктів</p></div>
+    <div class="card"><h3>{{ stats.customers }}</h3><p>Клієнтів</p></div>
+    <div class="card"><h3>{{ stats.consultants }}</h3><p>Консультантів</p></div>
+    <div class="card"><h3>{{ stats.quotes }}</h3><p>Заявок / оплат</p></div>
+</section>
+
+<section>
+    <h2>Рекомендовані продукти</h2>
+    <div class="grid-3">
+        {% for product in featured_products %}
+        <div class="card">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p><strong>Рівень ризику:</strong> {{ product.destination_risk_level }}</p>
+            <p><strong>Ціна за день:</strong> €{{ '%.2f'|format(product.daily_price) }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Форма продукту{% endblock %}
+{% block content %}
+<h1>{{ 'Редагувати продукт' if product else 'Додати продукт' }}</h1>
+<form method="post" class="form-card">
+    <label>Назва<input type="text" name="name" value="{{ product.name if product else '' }}" required></label>
+    <label>Рівень ризику країни
+        <select name="destination_risk_level">
+            {% for level in ['Low', 'Medium', 'High'] %}
+            <option value="{{ level }}" {% if product and product.destination_risk_level == level %}selected{% endif %}>{{ level }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Мін. вік<input type="number" name="min_age" value="{{ product.min_age if product else 18 }}" required></label>
+    <label>Макс. вік<input type="number" name="max_age" value="{{ product.max_age if product else 65 }}" required></label>
+    <label>Ліміт екстреної допомоги<input type="number" name="emergency_limit" value="{{ product.emergency_limit if product else 50000 }}" required></label>
+    <label>Ціна за день<input type="number" step="0.01" name="daily_price" value="{{ product.daily_price if product else 10.00 }}" required></label>
+    <label><input type="checkbox" name="covers_pre_existing_conditions" {% if product and product.covers_pre_existing_conditions %}checked{% endif %}> Покриває хронічні хвороби</label>
+    <label><input type="checkbox" name="sports_coverage" {% if product and product.sports_coverage %}checked{% endif %}> Покриває активний відпочинок</label>
+    <label>Опис<textarea name="description" required>{{ product.description if product else '' }}</textarea></label>
+    <div class="actions-row">
+        <button class="btn" type="submit">Зберегти</button>
+        <a class="btn secondary" href="{{ url_for('products.list_products') }}">Назад</a>
+    </div>
+</form>
+{% endblock %}

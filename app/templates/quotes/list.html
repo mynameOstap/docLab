@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Заявки та оплата{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Заявки на страховку та оплата</h1>
+    <a class="btn" href="{{ url_for('quotes.create_quote') }}">Створити заявку</a>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Клієнт</th>
+            <th>Продукт</th>
+            <th>Консультант</th>
+            <th>Країна</th>
+            <th>Днів</th>
+            <th>Сума</th>
+            <th>Оплата</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for quote in quotes %}
+        <tr>
+            <td>{{ quote.customer.full_name }}</td>
+            <td>{{ quote.insurance_product.name }}</td>
+            <td>{{ quote.consultant.full_name if quote.consultant else '-' }}</td>
+            <td>{{ quote.destination_country }}</td>
+            <td>{{ quote.trip_days }}</td>
+            <td>€{{ '%.2f'|format(quote.total_price) }}</td>
+            <td>{{ quote.payment_status }}</td>
+            <td class="actions">
+                <a class="btn small" href="{{ url_for('quotes.edit_quote', quote_id=quote.id) }}">Редагувати</a>
+                <form method="post" action="{{ url_for('quotes.delete_quote', quote_id=quote.id) }}">
+                    <button class="btn danger small" type="submit">Видалити</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

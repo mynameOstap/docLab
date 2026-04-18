@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Форма консультанта{% endblock %}
+{% block content %}
+<h1>{{ 'Редагувати консультанта' if consultant else 'Додати консультанта' }}</h1>
+<form method="post" class="form-card">
+    <label>ПІБ<input type="text" name="full_name" value="{{ consultant.full_name if consultant else '' }}" required></label>
+    <label>Email<input type="email" name="email" value="{{ consultant.email if consultant else '' }}" required></label>
+    <label>Спеціалізація<input type="text" name="specialization" value="{{ consultant.specialization if consultant else '' }}" required></label>
+    <div class="actions-row">
+        <button class="btn" type="submit">Зберегти</button>
+        <a class="btn secondary" href="{{ url_for('consultants.list_consultants') }}">Назад</a>
+    </div>
+</form>
+{% endblock %}
