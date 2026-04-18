@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Страхові продукти{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Страхові продукти</h1>
+    <a class="btn" href="{{ url_for('products.create_product') }}">Додати продукт</a>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Ризик країни</th>
+            <th>Вік</th>
+            <th>Ліміт</th>
+            <th>Ціна/день</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.destination_risk_level }}</td>
+            <td>{{ product.min_age }} - {{ product.max_age }}</td>
+            <td>{{ product.emergency_limit }}</td>
+            <td>€{{ '%.2f'|format(product.daily_price) }}</td>
+            <td class="actions">
+                <a class="btn small" href="{{ url_for('products.edit_product', product_id=product.id) }}">Редагувати</a>
+                <form method="post" action="{{ url_for('products.delete_product', product_id=product.id) }}">
+                    <button class="btn danger small" type="submit">Видалити</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

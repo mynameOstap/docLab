@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Клієнти{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Клієнти</h1>
+    <a class="btn" href="{{ url_for('customers.create_customer') }}">Додати клієнта</a>
+</div>
+<table>
+    <thead><tr><th>ПІБ</th><th>Вік</th><th>Стан здоров'я</th><th>Країна</th><th>Хронічні хвороби</th><th>Дії</th></tr></thead>
+    <tbody>
+    {% for customer in customers %}
+        <tr>
+            <td>{{ customer.full_name }}</td>
+            <td>{{ customer.age }}</td>
+            <td>{{ customer.health_status }}</td>
+            <td>{{ customer.country_of_travel }}</td>
+            <td>{{ 'Так' if customer.has_chronic_disease else 'Ні' }}</td>
+            <td class="actions">
+                <a class="btn small" href="{{ url_for('customers.edit_customer', customer_id=customer.id) }}">Редагувати</a>
+                <form method="post" action="{{ url_for('customers.delete_customer', customer_id=customer.id) }}">
+                    <button class="btn danger small" type="submit">Видалити</button>
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

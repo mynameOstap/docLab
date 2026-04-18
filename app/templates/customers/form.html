@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Форма клієнта{% endblock %}
+{% block content %}
+<h1>{{ 'Редагувати клієнта' if customer else 'Додати клієнта' }}</h1>
+<form method="post" class="form-card">
+    <label>ПІБ<input type="text" name="full_name" value="{{ customer.full_name if customer else '' }}" required></label>
+    <label>Вік<input type="number" name="age" value="{{ customer.age if customer else 30 }}" required></label>
+    <label>Стан здоров'я
+        <select name="health_status">
+            {% for status in ['stable', 'requires_monitoring', 'high_risk'] %}
+            <option value="{{ status }}" {% if customer and customer.health_status == status %}selected{% endif %}>{{ status }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label>Країна подорожі<input type="text" name="country_of_travel" value="{{ customer.country_of_travel if customer else '' }}" required></label>
+    <label><input type="checkbox" name="has_chronic_disease" {% if customer and customer.has_chronic_disease %}checked{% endif %}> Є хронічні захворювання</label>
+    <div class="actions-row">
+        <button class="btn" type="submit">Зберегти</button>
+        <a class="btn secondary" href="{{ url_for('customers.list_customers') }}">Назад</a>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Allianz Travel Insurance{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="{{ url_for('main.index') }}" class="brand">Allianz Travel MVC</a>
+            <nav>
+                <a href="{{ url_for('products.list_products') }}">Продукти</a>
+                <a href="{{ url_for('customers.list_customers') }}">Клієнти</a>
+                <a href="{{ url_for('consultants.list_consultants') }}">Консультанти</a>
+                <a href="{{ url_for('quotes.list_quotes') }}">Заявки / Оплата</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

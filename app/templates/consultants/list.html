@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Консультанти{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Консультанти</h1>
+    <a class="btn" href="{{ url_for('consultants.create_consultant') }}">Додати консультанта</a>
+</div>
+<table>
+    <thead><tr><th>ПІБ</th><th>Email</th><th>Спеціалізація</th><th>Дії</th></tr></thead>
+    <tbody>
+    {% for consultant in consultants %}
+        <tr>
+            <td>{{ consultant.full_name }}</td>
+            <td>{{ consultant.email }}</td>
+            <td>{{ consultant.specialization }}</td>
+            <td class="actions">
+                <a class="btn small" href="{{ url_for('consultants.edit_consultant', consultant_id=consultant.id) }}">Редагувати</a>
+                <form method="post" action="{{ url_for('consultants.delete_consultant', consultant_id=consultant.id) }}">
+                    <button class="btn danger small" type="submit">Видалити</button>
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
